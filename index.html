@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Luiz | Dev Front-End</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+  <canvas id="background"></canvas>
+
+  <main class="container">
+    <video class="profile-video" autoplay loop muted playsinline>
+      <source src="src/img/video-nino.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+
+    <h3 class="title">Estudante/Desenvolvedor - Front-End</h3>
+    <h1>Daniel Luiz</h1>
+    <p class="subtitle">Persistence accomplishes the impossible</p>
+
+    <div class="buttons">
+      <a href="#" class="btn">🖥 Portfolio</a>
+      <a href="https://instagram.com/daniel_.luizx" class="btn">📸 Instagram</a>
+      <a href="#" class="btn">🇧🇷 LinkedIn</a>
+      <a href="https://github.com/danielluiz07" class="btn">🐱 GitHub</a>
+      <a href="https://tiktok.com/@raridade.tech" class="btn">🎥 Tik Tok</a>
+    </div>
+
+    <div class="music-controls">
+      <button id="playButton" class="music-btn">🎶 Reproduzir Música</button>
+      <button id="pauseButton" class="music-btn pause" disabled>❌ Pausar ❌</button>
+    </div>
+
+    <footer>
+      Project of <a href="#"> Dev | Daniel Code</a>
+    </footer>
+  </main>
+
+  <audio id="musica" src="src/audio/musica.mp3"></audio>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>

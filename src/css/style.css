@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+
+canvas#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.profile-video {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 20px;
+  justify-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title {
+  color: #00ffcc;
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+  align-items: center;
+}
+
+
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 14px 20px;
+  border: 1px solid #666;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+  margin-top: 5px;
+  width: 20%;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.music-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+  margin-top: 30px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.music-btn {
+  padding: 10px 20px;
+  border: 1px solid #888;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.music-btn.pause {
+  background-color: #800000;
+}
+
+.music-btn.pause:hover,  .music-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  background: rgba(180, 180, 180, 0.3);
+}
+
+
+footer {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .profile-video {
+    width: 80px;
+    height: 80px;
+  }
+
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+
+  .music-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .music-btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}
+
