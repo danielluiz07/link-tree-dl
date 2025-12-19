@@ -1,4 +1,4 @@
-# 💻 Daniel Luiz | Dev Front-End - Página Pessoal
+# 💻 Link tree - DL
 
 ![preview](src/img/preview-site-links.png)
 
